@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Html 5 video background</title>
+	<style>
+		*,
+		*:after,
+		*:before {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		h1,h2,h3,h4,h5,h6,p { padding-bottom: 20px; }
+		.video-wrap {
+			position: relative;
+			overflow: hidden;
+			min-height: 75vh;
+			min-width: 100vh;
+		}
+		.video {
+			position: absolute;
+			right: 50%;
+			-ms-transform: translate(50%,-50%);
+			-webkit-transform: translate(50%,-50%);
+			transform:  translate(50%,-50%);
+			top: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: -1;
+		}
+		.content {
+			max-width: 850px;
+			margin: 0 auto;
+			padding: 50px 10px;
+		}
+	</style>
+</head>
+<body>
+	<div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+		<h2>Lorem ipsum dolor sit amet</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="video-wrap">
+		<video id="video" class="video" autoplay preload="auto" loop="loop" muted="muted">
+			<source src="videos/video1.mp4" type="video/mp4" />
+			Your browser does not support HTML5 video.
+		</video>
+		<div class="content">
+			<a href="fullscreen.html">Fullscreen demo</a>
+			<h1>HTML 5 Background Video</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+		<h2>Lorem ipsum dolor sit amet</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	
+</body>
+</html>
